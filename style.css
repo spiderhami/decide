@@ -1,0 +1,74 @@
+body {
+    display: flex;
+}
+p {
+    margin: 0;
+}
+.btn {
+    background-color: #fff;
+    border: 1px solid #4d90fe;
+    border-radius: 3px;
+    padding: 10px 20px;
+    color: #4d90fe;
+    margin-top: 10px;
+}
+.btn:focus {
+    outline: none;
+    background-color: #4d90fe;
+    color: #fff;
+}
+.btn:hover {
+    cursor: pointer;
+}
+
+.choice {
+    flex-basis: 20%;
+    text-align: center;
+}
+.result {
+    flex-basis: 80%;
+    text-align: center;
+}
+.axis {
+    width: 80%;
+    margin: 50px auto 0;
+    font-size: 0.8em;
+    position: relative;
+    display: flex;
+    color: gray;
+}
+.axis::before {
+    content: '0';
+    position: absolute;
+    left: -15px;
+    top: -6px;
+}
+.axis::after {
+    content: '100';
+    position: absolute;
+    right: -30px;
+    top: -6px;
+}
+.bar-left {
+    width: 50%;
+    border-top: 5px solid rgba(0, 255, 0, 0.2);
+}
+.bar-right {
+    width: 50%;
+    border-top: 5px solid rgba(255, 0, 0, 0.2);
+}
+.message {
+    font-size: 2em;
+    margin-top: 20px;
+}
+.cursor {
+    position: absolute;
+    left: 50%;
+    top: 5px;
+    transform: translateX(-50%);
+    transition: left .5s;
+    font-size: 1.5em;
+}
+.hidden {
+    visibility: hidden;
+}
