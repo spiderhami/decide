@@ -1,5 +1,5 @@
 # UI
-![app main window](./assets/main.png)
+![app main window](https://github.com/spiderhami/decide/blob/master/assets/main.PNG)
 
 # How to use
 
