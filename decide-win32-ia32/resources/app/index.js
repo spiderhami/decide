@@ -10,7 +10,7 @@ app.on('ready', () => {
         height: 250,
         webPreferences: { nodeIntegration: true }
     });
-    myWindow.loadFile('./index.html');
+    myWindow.loadFile('./src/index.html');
 
     myWindow.on('closed', () => myWindow = null);
 })
